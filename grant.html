@@ -1,0 +1,137 @@
+<html>
+
+	<head>
+		<link rel="stylesheet" type="" href="kent.css">
+	</head>
+	
+<body>
+	<div class="lumacang">
+	<br>
+	<br>
+	<br>
+	<br>
+		<div class="cc">
+				<input type="text" id="num">
+			<br>
+			<br>
+			<br>
+				<button onclick="one()">1</button>
+				<button onclick="two()">2</button>
+				<button onclick="three()">3</button>
+				<button onclick="add()">+</button>
+			<br>
+				<button onclick="four()">4</button>
+				<button onclick="five()">5</button>
+				<button onclick="six()">6</button>
+				<button onclick="multiply()">*</button>
+			<br>
+				<button onclick="seven()">7</button>
+				<button onclick="eight()">8</button>
+				<button onclick="nine()">9</button>
+				<button onclick="subtract()">-</button>
+			<br>
+				<button onclick="zero()">0</button>
+				<button onclick="equals()">=</button>
+				<button onclick="cancel()">C</button>
+				<button onclick="divide()">/</button>
+		</div>	
+	</div>
+	
+	<script type="text/javascript">
+		  
+		  let n2 = 0;
+		  let grant = ""
+		  let n1 = 0;
+		  
+		  function add(){
+			n2 = document.getElementById("num").value;
+			document.getElementById("num").value = "";
+			grant = "+"
+		  }
+		  
+		  function subtract(){
+			n2 = document.getElementById("num").value;
+			document.getElementById("num").value = "";
+			grant = "-"
+		  }
+		  
+		  function multiply(){
+			n2 = document.getElementById("num").value;
+			document.getElementById("num").value = "";
+			grant = "*"
+		  }
+		  
+		  function divide(){
+			n2 = document.getElementById("num").value;
+			document.getElementById("num").value = "";
+			grant = "/"
+		  }
+		  
+		  function cancel(){
+			document.getElementById("num").value = "";
+		  }
+		  
+		  function equals(){
+		    let n1 = document.getElementById("num").value;
+			if (grant == "+"){
+		    document.getElementById("num").value = parseInt(n1) + parseInt(n2);
+		  }
+		   else if (grant == "-"){
+		    document.getElementById("num").value = parseInt(n1) - parseInt(n2);
+			}
+			 else if (grant == "*"){
+		    document.getElementById("num").value = parseInt(n1) * parseInt(n2);
+			}
+			 else if (grant == "/"){
+		    document.getElementById("num").value = parseInt(n1) / parseInt(n2);
+			}
+			
+		 }
+		  
+		  function one(){
+			document.getElementById("num").value += 1;
+		  }
+		  
+		  function two(){
+		    document.getElementById("num").value += 2;
+		  }
+		  
+		   function three(){
+		    document.getElementById("num").value += 3;
+		  }
+		  
+		   function four(){
+		    document.getElementById("num").value += 4;
+		  }
+		  
+		   function five(){
+		    document.getElementById("num").value += 5;
+		  }
+		  
+		   function six(){
+		    document.getElementById("num").value += 6;
+		  }
+		  
+		   function seven(){
+		    document.getElementById("num").value += 7;
+		  }
+		  
+		   function eight(){
+		    document.getElementById("num").value += 8;
+		  }
+		  
+		   function nine(){
+		    document.getElementById("num").value += 9;
+		  }
+		  
+		   function zero(){
+		    document.getElementById("num").value += 0;
+		  }
+		  
+
+	  </script>
+	
+	
+</body>
+
+</html>

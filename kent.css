@@ -1,0 +1,34 @@
+.lumacang{
+	background-image:url(gg.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height:100%;
+	width:100%;
+	
+}
+
+.cc{
+	display:block;
+	width:300px;
+	margin-left:40%;
+	margin-right:0;
+}
+
+button{
+	height:110;
+	width:72;
+	background-color:pink;
+	color:red;
+	border-color:blue;
+	border-radius:23px;
+	font-size:24;
+}
+input {
+	width:300px;
+	height:68;
+	font-size:24;
+	border-radius:23px;
+	border-color:#ff00d0;
+	
+}
